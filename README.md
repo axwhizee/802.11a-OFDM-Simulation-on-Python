@@ -43,10 +43,10 @@ CRC_checksum = np.array([0xDa, 0x57, 0x99, 0xed], dtype=np.uint8)   # CRC校验�
 ### 数据速率Rate
 
 $$
-Rate=Psy\_rate\times{R}\times{mod}\times0.8
+Rate=Psy \_ rate\times{R}\times{mod}\times0.8
 $$
 
-1. $Psy\_rate=\frac{1}{20MHz}\times\frac{48}{64}$（64子载波中48个数据子载波）
+1. $Psy \_rate =\frac{1}{20MHz}\times\frac{48}{64}$（64子载波中48个数据子载波）
 2. $R$ 为卷积编码删余后的编码率，$\frac{3}{6-2}$或$\frac{2}{4-1}$或$\frac{1}{2}$
 3. $mod$ 为相应调制方式下符号所含比特数（1、2、4、6）
 
@@ -59,7 +59,7 @@ $\LARGE0.8 = \LARGE\frac{4.0us-3.2us}{4.0us}$
 
 ### 星座调制映射计算式
 
-（输入$i_0、i_1、i_2、i_3$……其中$i_n$均已取$\bar{i_n}$）
+> 输入$i_0、i_1、i_2、i_3$……其中$i_n$均已取$\bar{i_n}$
 
 1. BPSK计算式：$(-1)^{i_0}$
 2. QPSK计算式：$(-1)^{i_0}+(-1)^{i_1}{j}$
